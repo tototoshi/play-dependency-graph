@@ -1,0 +1,123 @@
+digraph {
+  rankdir=LR;
+  "templates" -> "scala-io-filee";
+
+  "anorm";
+
+  "sbt-link" -> "javassist";
+
+  "routes-compiler" -> "scala-io-file";
+
+  "templates-compiler" -> "scala-io-file";
+
+  "iteratees" -> "scala-stm";
+  "iteratees" -> "typesafe/config";
+
+  "play-json" -> "iteratees";
+  "play-json" -> "play-functional";
+  "play-json" -> "play-datacommons";
+  "play-json" -> "joda-time";
+  "play-json" -> "joda-convert";
+  "play-json" -> "jackson";
+  "play-json" -> "scala-reflect";
+
+  "play" -> "templates";
+  "play" -> "sbt-link";
+  "play" -> "play-exceptions";
+  "play" -> "iteratees";
+  "play" -> "play-json";
+
+  "play" -> "netty";
+  "play" -> "netty-http-pipelining";
+  "play" -> "slf4j-api";
+  "play" -> "jul-to-slf4j";
+  "play" -> "jcl-over-slf4j";
+  "play" -> "logback-core";
+  "play" -> "logback-classic";
+  "play" -> "scala-io-file";
+  "play" -> "akka-actor";
+  "play" -> "akka-slf4j";
+  "play" -> "scala-stm";
+  "play" -> "joda-time";
+  "play" -> "joda-convert";
+  "play" -> "commons-lang3";
+  "play" -> "async-http-client";
+  "play" -> "signpost-core";
+  "play" -> "signpost-commonshttp4";
+  "play" -> "jackson";
+  "play" -> "xercesImpl";
+  "play" -> "ehcache-core";
+  "play" -> "jta";
+  "play" -> "scala-reflect";
+
+  "play-java" -> "play";
+
+  "play-java" -> "snakeyaml";
+  "play-java" -> "hibernate-validator";
+  "play-java" -> "spring-context";
+  "play-java" -> "spring-core";
+  "play-java" -> "spring-beans";
+  "play-java" -> "javassist";
+  "play-java" -> "reflections";
+  "play-java" -> "guava";
+  "play-java" -> "findbugs";
+  "play-java" -> "servlet-api";
+
+  "play-jdbc" -> "play";
+  "play-jdbc" -> "bonecp";
+  "play-jdbc" -> "h2";
+  "play-jdbc" -> "tyrex";
+
+  "play-java-jdbc" -> "play-java";
+  "play-java-jdbc" -> "play-jdbc";
+
+  "play-java-jpa" -> "play-java-jdbc";
+  "play-java-jpa" -> "hibernate-jpa-2.0-api";
+
+  "play-java-ebean" -> "play-java-jdbc";
+  "play-java-ebean" -> "hibernate-jpa-2.0-api";
+  "play-java-ebean" -> "avaje-ebeanorm";
+
+  "play-test" -> "play";
+  "play-test" -> "specs2";
+  "play-test" -> "junit-dep";
+  "play-test" -> "junit-interface";
+  "play-test" -> "fluentlenium-festassert";
+  "play-test" -> "guava";
+  "play-test" -> "findbugs";
+
+  "play-docs" -> "play";
+  "play-docs" -> "play-doc";
+
+  "sbt-plugin" -> "sbt-link";
+  "sbt-plugin" -> "play-exceptions";
+  "sbt-plugin" -> "routes-compiler";
+  "sbt-plugin" -> "templates-compiler";
+  "sbt-plugin" -> "console";
+
+  "sbt-plugin" -> "scala-reflect";
+  "sbt-plugin" -> "typesafe/config";
+  "sbt-plugin" -> "rhino/js";
+  "sbt-plugin" -> "closure-compiler";
+  "sbt-plugin" -> "guava";
+  "sbt-plugin" -> "scala-io-file";
+  "sbt-plugin" -> "avaje-ebeanorm";
+  "sbt-plugin" -> "h2";
+  "sbt-plugin" -> "javassist";
+  "sbt-plugin" -> "jnotify";
+  "sbt-plugin" -> "sbteclipse-plugin";
+  "sbt-plugin" -> "sbt-idea";
+  "sbt-plugin" -> "sbt-native-packager";
+
+  "console" -> "scala-io-file";
+  "console" -> "sbt-launcher-interface";
+  "console" -> "jline";
+
+  "play-filters-helpers" -> "play";
+
+  "play-integration-test" -> "play";
+  "play-integration-test" -> "play-test";
+
+  "play-cache" -> "play";
+  "play-cache" -> "ehcache-core";
+}
